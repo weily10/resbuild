@@ -19,6 +19,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+div{
+  @apply break-words
+}
+
 @layer components {
   .primary-text{
     @apply text-[#910094]

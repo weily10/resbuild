@@ -13,12 +13,24 @@ defineProps({
         id="template"
         class="w-[210mm] h-[297mm] drop-shadow-2xl bg-white border-x-cyan-950 p-12 m-6"
       >
-        <p class="text-lg font-medium">
-          {{ data.name }}
-        </p>
-        <p class="">
-          {{ data.expertise }}
-        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <p class="text-2xl font-semibold">
+              {{ data.name }}
+            </p>
+            <p class="">
+              {{ data.expertise }}
+            </p>
+            <p class="">
+              {{ data.location }}
+            </p>
+          </div>
+          <div class="ml-6">
+            <div>
+              {{ data.desc }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
