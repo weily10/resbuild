@@ -18,13 +18,14 @@ const data = ref<Data>({
     >
       <div class="flex space-x-6">
         <div class="font-extrabold primary-text box">MyRes</div>
+        <div class="box">Save</div>
         <div class="box">Preview</div>
         <div class="box">Download</div>
       </div>
     </div>
     <div class="flex justify-center">
       <Resume :data="data"></Resume>
-      <div class="bg-gray-100 p-6 fixed h-full right-0 mt-16 space-y-3">
+      <div class="bg-gray-100 p-6 fixed h-full right-0 mt-16 space-y-3 w-80">
         <label class="relative block">
           <span>Name</span>
           <span class="absolute inset-y-0 left-0 flex items-center pl-2">
